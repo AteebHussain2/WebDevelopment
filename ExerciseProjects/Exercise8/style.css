@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(168, 215, 255);
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+@keyframes AnimateX {
+    from {
+        left: -100px;
+    }
+    
+    to {
+        left: 100%;
+    }
+}   
+
+@keyframes AnimateY {
+    from {
+        bottom: 0;
+    }
+    
+    to {
+        bottom: 50%;
+    }
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 50px;
+    position: absolute;
+    left: -100;
+    bottom: 0;
+    animation: AnimateX 3s linear infinite,
+               AnimateY 1s ease-out infinite alternate;
+}

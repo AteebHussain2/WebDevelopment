@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+body {
+    margin: 0 346px;
+    padding-top: 21px;
+    line-height: 1.5em;
+    vertical-align: baseline;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 56px;
+}
+
+.right ul {
+    display: flex;
+    gap: 20px;
+}
+
+.right ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 16px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.mac-linux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222222;
+    font-weight: 400;
+    padding-bottom: 10px;
+    line-height: 1.3em;
+}
+
+h1 {
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    padding: 0 45px 10px 45px;
+    font-size: 24px;
+}
+
+.align-button {
+    padding-top: 25px;
+}
+
+.mac-linux-download-button {
+    padding: 12px 20px;
+    color: white;
+    background-color: #00b6d1;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 48px;
+    min-width: 256px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.windows {
+    margin-top: 50px;
+}
+
+.windows-box {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px 14px 10px 14px;
+}
+
+.windows-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(241, 227, 255);
+}
+
+header nav {
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 5px 0px;
+    background-color: rgb(152, 63, 235);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    padding: 0px 25px;
+    position: relative;
+    left: 200px;
+}
+
+nav ul p {
+    color: white;
+    padding: 0px 50px;
+}
+
+main {
+    padding: 25px;
+    margin: 0px 50px 0px 50px;
+}
+
+main .container {
+    position: relative;
+    gap: 25px;
+}
+
+main .box1, main .box2 {
+    width: 40vw;
+    height: 87vh;
+    border-radius: 25px;
+    background-color: aquamarine;
+    padding: 25px;
+    position: absolute;
+    top: 25px;
+}
+
+main .box2 {
+    right: 0vw;
+}
+
+main .box3 {
+    width: 90vw;
+    height: 12vh;
+    border-radius: 25px;
+    background-color: aquamarine;
+    padding: 15px;
+    position: absolute;
+    top: 97vh;
+}
+
+footer nav {
+    position: relative;
+    top: 115vh;
+    color: white;
+    background-color: rgb(152, 63, 235);
+    position: relative;
+    bottom: 0;
+}
+
+footer nav p {
+    padding: 5px;
+    margin: 0px 50px;
+}
+
+#logo {
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 100px;
+    mix-blend-mode: multiply;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+}

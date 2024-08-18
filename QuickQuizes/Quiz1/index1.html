@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admission Forum</title>
+</head>
+
+<body bgcolor="rgb(0,102,255)">
+	<p align="center">
+		<font face="Fantasy" color="Yellow" style="font-size: xx-large;"><b>Unique Group of Intitutions</b></font>
+	</p>
+	<div>
+		<form action="index2.html" method="post"
+			style="font-size: large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: aliceblue; text-align: center;">
+			<div>
+				<label for="username">
+					Enter Username:
+				</label>
+				<input type="text" size="30" placeholder="Enter Username" align="center" autocapitalize="word" autofocus
+					required id="username" name="username">
+			</div>
+			<div>
+				<label for="password">
+					Enter Password:&nbsp;
+				</label>
+				<input type="password" size="30" placeholder="Enter Password" align="center" autocapitalize="off"
+					autofocus required id="password" name="password">
+			</div>
+			<div>
+				<input type="radio" id="male" name="gender">
+				<label for="male" style="color: rgb(255, 187, 0);">Male</label>
+				<input type="radio" id="female" name="gender">
+				<label for="female" style="color: rgb(255, 187, 0);">Female</label>
+			</div>
+			<div>
+				<select name="task">
+					<option id="Result">Award List</option>
+					<option id="Result">Leaderboard</option>
+					<option id="Result">Attendence</option>
+				</select>
+			</div>
+			<div>
+				<input type="submit" id="submit" name="submit">
+			</div>
+			<div>
+				<input type="reset" id="reset" name="reset">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
