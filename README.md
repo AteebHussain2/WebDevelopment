@@ -6,7 +6,7 @@ This repository is a collection of projects and resources for learning and pract
 
 This folder contains projects that are clones of existing websites. These projects are great for learning how to build specific features and functionalities, as well as understanding how real-world websites are structured.
 
-**2. ExerciseProjects:**
+**2. Exercises:**
 
 This folder contains projects designed for training purposes. These projects are smaller in scope and focus on specific concepts or techniques. They are perfect for practicing your skills and solidifying your understanding of web development fundamentals.
 
