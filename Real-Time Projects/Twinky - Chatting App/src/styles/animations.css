@@ -1,0 +1,97 @@
+:root {
+    --colorDarkest: #3E0A8C;
+    --colorDark: #5A0FC8;
+    --colorMain: #7B3FD3;
+    --colorLight: #AD87E4;
+    --colorLighter: #BD9FE9;
+    --colorLightest: #DECFF4;
+    --colorDarkGray: #2A2A2A;
+    --colorLightGray: #B1B1B1;
+    --colorWhite: #F2F2F2;
+}
+
+@keyframes colorChange {
+    0% {
+        fill: var(--colorDark);
+        opacity: 0.5;
+    }
+
+    25% {
+        fill: var(--colorLight);
+        opacity: 0.5;
+    }
+
+    50% {
+        fill: var(--colorMain);
+        opacity: 0.5;
+    }
+
+    75% {
+        fill: var(--colorLighter);
+        opacity: 0.5;
+    }
+
+    100% {
+        fill: var(--colorLightest);
+        opacity: 0.5;
+    }
+}
+
+.circle {
+    animation: colorChange 2s linear infinite;
+}
+
+#circle-1 {
+    animation-delay: 0s;
+}
+
+#circle-2 {
+    animation-delay: 0.15s;
+}
+
+#circle-3 {
+    animation-delay: 0.3s;
+}
+
+#circle-4 {
+    animation-delay: 0.45s;
+}
+
+.hidden-screens {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.hidden-screens2 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in, visibility 0s linear;
+}
+
+#mainContent {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in, visibility 0s linear, background-color 0.5s ease;
+    position: absolute;
+}
+
+#mainContent.visible {
+    opacity: 1;
+    visibility: visible;
+}    

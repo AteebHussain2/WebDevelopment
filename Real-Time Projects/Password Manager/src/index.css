@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-menu {
+        @apply mb-1 px-1 transition-all ease-in-out border-b-2 border-opacity-0 border-[#63e] hover:-translate-y-1 hover:border-opacity-100;
+    }
+}
+
+@keyframes menu-bar-in-animation {
+    from {
+        opacity: 0;
+        transform: translateX(350px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes menu-bar-out-animation {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(350px);
+    }
+}
+
+.menu-bar-in {
+    animation: menu-bar-in-animation 0.5s ease-in-out forwards;
+}
+
+.menu-bar-out {
+    animation: menu-bar-out-animation 0.5s ease-in-out backwards;
+}
+
+.ParallaxBackground {
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

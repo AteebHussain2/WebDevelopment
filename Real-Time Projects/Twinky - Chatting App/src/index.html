@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./styles/login-style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <title>Twinky Login Page</title>
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen">
+        <figure id="logoContainer">
+            <img src="svg/logo.svg" alt="Twinky Logo" id="logo">
+            <h1 id="title">Twinky</h1>
+            <h1 id="subtitle">You & Me</h1>
+        </figure>
+
+        <svg id="loader" width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+            <circle id="circle-1" class="circle" cx="12" cy="48" r="8" fill="#5A0FC8" />
+            <circle id="circle-2" class="circle" cx="36" cy="48" r="8" fill="#7B3FD3" />
+            <circle id="circle-3" class="circle" cx="60" cy="48" r="8" fill="#BD9FE9" />
+            <circle id="circle-4" class="circle" cx="84" cy="48" r="8" fill="#DECFF4" />
+        </svg>
+    </div>
+    <!-- Login or Sign Up -->
+    <div id="mainContent">
+        <figure id="purpleFrame">
+            <img src="./svg/logo-image.svg" alt="Twinky Logo Here">
+        </figure>
+
+        <!-- Login Page -->
+
+        <div class="m-container" id="m-login">
+            <span class="text">Log Into Your Account</span>
+            <div class="toggle-btns">
+                <span class="tabs active-tab">
+                    <span><svg width="20" height="23" class="m-icon" viewBox="0 0 20 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.77778 17.4444V14.1111H0V9.66667H7.77778V6.33333L13.3333 11.8889L7.77778 17.4444ZM7.77778 0.777779H17.7778C18.3671 0.777779 18.9324 1.0119 19.3491 1.42865C19.7659 1.8454 20 2.41063 20 3V20.7778C20 21.3671 19.7659 21.9324 19.3491 22.3491C18.9324 22.7659 18.3671 23 17.7778 23H7.77778C7.18841 23 6.62318 22.7659 6.20643 22.3491C5.78968 21.9324 5.55556 21.3671 5.55556 20.7778V18.5556H7.77778V20.7778H17.7778V3H7.77778V5.22222H5.55556V3C5.55556 2.41063 5.78968 1.8454 6.20643 1.42865C6.62318 1.0119 7.18841 0.777779 7.77778 0.777779Z"/>
+                        </svg>Login</span>
+                </span>
+                <span class="tabs">
+                    <span><svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg" class="m-icon">
+                        <path d="M3.24764 15.7352C1.56079 12.7693 0.616599 9.40227 0.500391 5.95039C0.491353 5.68188 0.639671 5.43384 0.877299 5.30849L10.1665 0.408733C10.3752 0.298621 10.6248 0.298621 10.8335 0.408733L20.1227 5.30849C20.3603 5.43384 20.5087 5.68189 20.4996 5.95039C20.3834 9.40227 19.4392 12.7693 17.7524 15.7352C16.0647 18.7025 13.6914 21.1667 10.8573 22.8994C10.6379 23.0335 10.3622 23.0335 10.1427 22.8994C7.30857 21.1667 4.93527 18.7025 3.24764 15.7352Z"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269" stroke="white" stroke-width="1.93048" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Verification</span>
+                </span>
+            </div>
+            <div class="m-login">
+                <label for="email" class="email-label">Enter Your Email</label>
+                <svg class="m-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24" id="Mail--Streamline-Rounded----Material-Symbols" height="24" width="24">
+                    <path d="M3.354166666666667 19.166666666666668c-0.38333333333333336 0 -0.71875 -0.14375 -1.00625 -0.43125 -0.2875 -0.2875 -0.43125 -0.6229166666666667 -0.43125 -1.00625V5.270833333333334c0 -0.38333333333333336 0.14375 -0.71875 0.43125 -1.00625C2.635416666666667 3.9770833333333337 2.9708333333333337 3.8333333333333335 3.354166666666667 3.8333333333333335h16.291666666666668c0.38333333333333336 0 0.71875 0.14375 1.00625 0.43125 0.2875 0.2875 0.43125 0.6229166666666667 0.43125 1.00625v12.458333333333334c0 0.38333333333333336 -0.14375 0.71875 -0.43125 1.00625 -0.2875 0.2875 -0.6229166666666667 0.43125 -1.00625 0.43125H3.354166666666667Zm16.291666666666668 -12.578125 -7.7625 5.079166666666667c-0.06387291666666667 0.031960416666666665 -0.12376875 0.059895833333333336 -0.1796875 0.08385416666666666 -0.05591875 0.023958333333333335 -0.12376875 0.0359375 -0.20364583333333333 0.0359375 -0.07987708333333333 0 -0.14772708333333334 -0.011979166666666667 -0.20364583333333333 -0.0359375 -0.05591875 -0.023958333333333335 -0.11581458333333333 -0.051893749999999995 -0.1796875 -0.08385416666666666L3.354166666666667 6.588541666666667V17.729166666666668h16.291666666666668V6.588541666666667ZM11.5 10.49375 19.55 5.270833333333334H3.4739583333333335L11.5 10.49375ZM3.354166666666667 6.7562500000000005v-0.9420416666666667V5.270833333333334v0.5510416666666667V6.7562500000000005Z" stroke-width="0.5"></path>
+                </svg>
+                <input type="email" name="email" placeholder="example@domain.com" id="Email" required>
+                <span class="m-input-info hidden-screens">A Code Has Been Sent To &ensp;<a class="purple-highlighted">example@domain.com</a></span>
+                <span class="sign-in-btn" onclick="show_m_login_verification()"><span class="material-symbols-outlined">keyboard_double_arrow_right</span> Next Step</span>
+            </div>
+            <div class="footer-info">
+                <span>Don't Have An Account? &ensp;<a onclick="show_m_signin()" class="purple-highlighted">Sign Up</a></span>
+            </div>
+        </div>
+
+        <!-- Verification -->
+
+        <div class="m-container hidden-screens2" id="m-login-verification">
+            <span class="text">Log Into Your Account</span>
+            <div class="toggle-btns">
+                <span class="tabs">
+                    <span><svg width="20" height="23" class="m-icon" viewBox="0 0 20 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.77778 17.4444V14.1111H0V9.66667H7.77778V6.33333L13.3333 11.8889L7.77778 17.4444ZM7.77778 0.777779H17.7778C18.3671 0.777779 18.9324 1.0119 19.3491 1.42865C19.7659 1.8454 20 2.41063 20 3V20.7778C20 21.3671 19.7659 21.9324 19.3491 22.3491C18.9324 22.7659 18.3671 23 17.7778 23H7.77778C7.18841 23 6.62318 22.7659 6.20643 22.3491C5.78968 21.9324 5.55556 21.3671 5.55556 20.7778V18.5556H7.77778V20.7778H17.7778V3H7.77778V5.22222H5.55556V3C5.55556 2.41063 5.78968 1.8454 6.20643 1.42865C6.62318 1.0119 7.18841 0.777779 7.77778 0.777779Z"/>
+                        </svg>Login</span>
+                </span>
+                <span class="tabs active-tab">
+                    <span><svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg" class="m-icon">
+                        <path d="M3.24764 15.7352C1.56079 12.7693 0.616599 9.40227 0.500391 5.95039C0.491353 5.68188 0.639671 5.43384 0.877299 5.30849L10.1665 0.408733C10.3752 0.298621 10.6248 0.298621 10.8335 0.408733L20.1227 5.30849C20.3603 5.43384 20.5087 5.68189 20.4996 5.95039C20.3834 9.40227 19.4392 12.7693 17.7524 15.7352C16.0647 18.7025 13.6914 21.1667 10.8573 22.8994C10.6379 23.0335 10.3622 23.0335 10.1427 22.8994C7.30857 21.1667 4.93527 18.7025 3.24764 15.7352Z"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269" stroke="white" stroke-width="1.93048" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Verification</span>
+                </span>
+            </div>
+            <div class="m-login">
+                <label for="email" class="email-label">Verification</label>
+                <svg class="m-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24" id="Mail--Streamline-Rounded----Material-Symbols" height="24" width="24">
+                    <path d="M3.354166666666667 19.166666666666668c-0.38333333333333336 0 -0.71875 -0.14375 -1.00625 -0.43125 -0.2875 -0.2875 -0.43125 -0.6229166666666667 -0.43125 -1.00625V5.270833333333334c0 -0.38333333333333336 0.14375 -0.71875 0.43125 -1.00625C2.635416666666667 3.9770833333333337 2.9708333333333337 3.8333333333333335 3.354166666666667 3.8333333333333335h16.291666666666668c0.38333333333333336 0 0.71875 0.14375 1.00625 0.43125 0.2875 0.2875 0.43125 0.6229166666666667 0.43125 1.00625v12.458333333333334c0 0.38333333333333336 -0.14375 0.71875 -0.43125 1.00625 -0.2875 0.2875 -0.6229166666666667 0.43125 -1.00625 0.43125H3.354166666666667Zm16.291666666666668 -12.578125 -7.7625 5.079166666666667c-0.06387291666666667 0.031960416666666665 -0.12376875 0.059895833333333336 -0.1796875 0.08385416666666666 -0.05591875 0.023958333333333335 -0.12376875 0.0359375 -0.20364583333333333 0.0359375 -0.07987708333333333 0 -0.14772708333333334 -0.011979166666666667 -0.20364583333333333 -0.0359375 -0.05591875 -0.023958333333333335 -0.11581458333333333 -0.051893749999999995 -0.1796875 -0.08385416666666666L3.354166666666667 6.588541666666667V17.729166666666668h16.291666666666668V6.588541666666667ZM11.5 10.49375 19.55 5.270833333333334H3.4739583333333335L11.5 10.49375ZM3.354166666666667 6.7562500000000005v-0.9420416666666667V5.270833333333334v0.5510416666666667V6.7562500000000005Z" stroke-width="0.5"></path>
+                </svg>
+                <input type="text" name="email" placeholder="Enter Verification Number" id="Email" required>
+                <span class="m-input-info">A Code Has Been Sent To &ensp;<a class="purple-highlighted">example@domain.com</a></span>
+                <span class="sign-in-btn" onclick="show_m_send_friend()"><span class="material-symbols-outlined">login</span> Login</span>
+            </div>
+            <div class="footer-info">
+                <span>Did Not Receive Code? &ensp;<a onclick="show_m_login()" class="purple-highlighted">Try Again</a></span>
+            </div>
+        </div>
+
+        <!-- Sign In -->
+
+        <div class="m-container hidden-screens2" id="m-signin">
+            <span class="text">Sign Into Your Account</span>
+            <div class="toggle-btns">
+                <span class="tabs active-tab">
+                    <span><svg width="20" height="23" class="m-icon" viewBox="0 0 20 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.77778 17.4444V14.1111H0V9.66667H7.77778V6.33333L13.3333 11.8889L7.77778 17.4444ZM7.77778 0.777779H17.7778C18.3671 0.777779 18.9324 1.0119 19.3491 1.42865C19.7659 1.8454 20 2.41063 20 3V20.7778C20 21.3671 19.7659 21.9324 19.3491 22.3491C18.9324 22.7659 18.3671 23 17.7778 23H7.77778C7.18841 23 6.62318 22.7659 6.20643 22.3491C5.78968 21.9324 5.55556 21.3671 5.55556 20.7778V18.5556H7.77778V20.7778H17.7778V3H7.77778V5.22222H5.55556V3C5.55556 2.41063 5.78968 1.8454 6.20643 1.42865C6.62318 1.0119 7.18841 0.777779 7.77778 0.777779Z"/>
+                        </svg>Sign In</span>
+                </span>
+                <span class="tabs">
+                    <span><svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg" class="m-icon">
+                        <path d="M3.24764 15.7352C1.56079 12.7693 0.616599 9.40227 0.500391 5.95039C0.491353 5.68188 0.639671 5.43384 0.877299 5.30849L10.1665 0.408733C10.3752 0.298621 10.6248 0.298621 10.8335 0.408733L20.1227 5.30849C20.3603 5.43384 20.5087 5.68189 20.4996 5.95039C20.3834 9.40227 19.4392 12.7693 17.7524 15.7352C16.0647 18.7025 13.6914 21.1667 10.8573 22.8994C10.6379 23.0335 10.3622 23.0335 10.1427 22.8994C7.30857 21.1667 4.93527 18.7025 3.24764 15.7352Z"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269" stroke="white" stroke-width="1.93048" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Verification</span>
+                </span>
+            </div>
+            <div class="m-login">
+                <label for="email" class="email-label">Enter Your Email</label>
+                <svg class="m-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24" id="Mail--Streamline-Rounded----Material-Symbols" height="24" width="24">
+                    <path d="M3.354166666666667 19.166666666666668c-0.38333333333333336 0 -0.71875 -0.14375 -1.00625 -0.43125 -0.2875 -0.2875 -0.43125 -0.6229166666666667 -0.43125 -1.00625V5.270833333333334c0 -0.38333333333333336 0.14375 -0.71875 0.43125 -1.00625C2.635416666666667 3.9770833333333337 2.9708333333333337 3.8333333333333335 3.354166666666667 3.8333333333333335h16.291666666666668c0.38333333333333336 0 0.71875 0.14375 1.00625 0.43125 0.2875 0.2875 0.43125 0.6229166666666667 0.43125 1.00625v12.458333333333334c0 0.38333333333333336 -0.14375 0.71875 -0.43125 1.00625 -0.2875 0.2875 -0.6229166666666667 0.43125 -1.00625 0.43125H3.354166666666667Zm16.291666666666668 -12.578125 -7.7625 5.079166666666667c-0.06387291666666667 0.031960416666666665 -0.12376875 0.059895833333333336 -0.1796875 0.08385416666666666 -0.05591875 0.023958333333333335 -0.12376875 0.0359375 -0.20364583333333333 0.0359375 -0.07987708333333333 0 -0.14772708333333334 -0.011979166666666667 -0.20364583333333333 -0.0359375 -0.05591875 -0.023958333333333335 -0.11581458333333333 -0.051893749999999995 -0.1796875 -0.08385416666666666L3.354166666666667 6.588541666666667V17.729166666666668h16.291666666666668V6.588541666666667ZM11.5 10.49375 19.55 5.270833333333334H3.4739583333333335L11.5 10.49375ZM3.354166666666667 6.7562500000000005v-0.9420416666666667V5.270833333333334v0.5510416666666667V6.7562500000000005Z" stroke-width="0.5"></path>
+                </svg>
+                <input type="email" name="email" placeholder="example@domain.com" id="Email"  required>
+                <span class="sign-in-btn" onclick="show_m_signin_verification()"><span class="material-symbols-outlined">keyboard_double_arrow_right</span> Next Step</span>
+            </div>
+            <div class="footer-info">
+                <span>Already Have An Account? &ensp;<a onclick="show_m_login()" class="purple-highlighted">Log In</a></span>
+            </div>
+        </div>
+
+        <!-- Verification -->
+
+        <div class="m-container hidden-screens2" id="m-signin-verification">
+            <span class="text">Sign Into Your Account</span>
+            <div class="toggle-btns">
+                <span class="tabs">
+                    <span><svg width="20" height="23" class="m-icon" viewBox="0 0 20 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.77778 17.4444V14.1111H0V9.66667H7.77778V6.33333L13.3333 11.8889L7.77778 17.4444ZM7.77778 0.777779H17.7778C18.3671 0.777779 18.9324 1.0119 19.3491 1.42865C19.7659 1.8454 20 2.41063 20 3V20.7778C20 21.3671 19.7659 21.9324 19.3491 22.3491C18.9324 22.7659 18.3671 23 17.7778 23H7.77778C7.18841 23 6.62318 22.7659 6.20643 22.3491C5.78968 21.9324 5.55556 21.3671 5.55556 20.7778V18.5556H7.77778V20.7778H17.7778V3H7.77778V5.22222H5.55556V3C5.55556 2.41063 5.78968 1.8454 6.20643 1.42865C6.62318 1.0119 7.18841 0.777779 7.77778 0.777779Z"/>
+                        </svg>Sign In</span>
+                </span>
+                <span class="tabs active-tab">
+                    <span><svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg" class="m-icon">
+                        <path d="M3.24764 15.7352C1.56079 12.7693 0.616599 9.40227 0.500391 5.95039C0.491353 5.68188 0.639671 5.43384 0.877299 5.30849L10.1665 0.408733C10.3752 0.298621 10.6248 0.298621 10.8335 0.408733L20.1227 5.30849C20.3603 5.43384 20.5087 5.68189 20.4996 5.95039C20.3834 9.40227 19.4392 12.7693 17.7524 15.7352C16.0647 18.7025 13.6914 21.1667 10.8573 22.8994C10.6379 23.0335 10.3622 23.0335 10.1427 22.8994C7.30857 21.1667 4.93527 18.7025 3.24764 15.7352Z"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269"/>
+                        <path d="M6.92506 12.3877L9.78503 14.5326L15.505 8.81269" stroke="white" stroke-width="1.93048" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Verification</span>
+                </span>
+            </div>
+            <div class="m-login">
+                <label for="email" class="email-label">Verification</label>
+                <svg class="m-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24" id="Mail--Streamline-Rounded----Material-Symbols" height="24" width="24">
+                    <path d="M3.354166666666667 19.166666666666668c-0.38333333333333336 0 -0.71875 -0.14375 -1.00625 -0.43125 -0.2875 -0.2875 -0.43125 -0.6229166666666667 -0.43125 -1.00625V5.270833333333334c0 -0.38333333333333336 0.14375 -0.71875 0.43125 -1.00625C2.635416666666667 3.9770833333333337 2.9708333333333337 3.8333333333333335 3.354166666666667 3.8333333333333335h16.291666666666668c0.38333333333333336 0 0.71875 0.14375 1.00625 0.43125 0.2875 0.2875 0.43125 0.6229166666666667 0.43125 1.00625v12.458333333333334c0 0.38333333333333336 -0.14375 0.71875 -0.43125 1.00625 -0.2875 0.2875 -0.6229166666666667 0.43125 -1.00625 0.43125H3.354166666666667Zm16.291666666666668 -12.578125 -7.7625 5.079166666666667c-0.06387291666666667 0.031960416666666665 -0.12376875 0.059895833333333336 -0.1796875 0.08385416666666666 -0.05591875 0.023958333333333335 -0.12376875 0.0359375 -0.20364583333333333 0.0359375 -0.07987708333333333 0 -0.14772708333333334 -0.011979166666666667 -0.20364583333333333 -0.0359375 -0.05591875 -0.023958333333333335 -0.11581458333333333 -0.051893749999999995 -0.1796875 -0.08385416666666666L3.354166666666667 6.588541666666667V17.729166666666668h16.291666666666668V6.588541666666667ZM11.5 10.49375 19.55 5.270833333333334H3.4739583333333335L11.5 10.49375ZM3.354166666666667 6.7562500000000005v-0.9420416666666667V5.270833333333334v0.5510416666666667V6.7562500000000005Z" stroke-width="0.5"></path>
+                </svg>
+                <input type="text" name="email" placeholder="Enter Verification Number..." id="Email" required>
+                <span class="m-input-info">A Code Has Been Sent To &ensp;<a class="purple-highlighted">example@domain.com</a></span>
+                <span class="sign-in-btn" onclick="show_m_send_friend()"><span class="material-symbols-outlined">login</span> Sign In</span>
+            </div>
+            <div class="footer-info">
+                <span>Did Not Receive Code? &ensp;<a onclick="show_m_signin()" class="purple-highlighted">Try Again</a></span>
+            </div>
+        </div>
+
+        <!-- Send a Request -->
+
+        <div class="m-container hidden-screens2" id="m-send-request">
+            <span class="text">Add Your Partner</span>
+            <div class="toggle-btns">
+                <span class="tabs active-tab">
+                    <span><svg width="20" height="23" class="m-icon" viewBox="0 0 20 23" xmlns="http://www.w3.org/2000/svg">
+                        </svg>Send a Request</span>
+                </span>
+                <span class="tabs">
+                    <span><svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg" class="m-icon">
+                        </svg>Received Requests</span>
+                </span>
+            </div>
+            <div class="m-login">
+                <label for="email" class="email-label">Enter Email</label>
+                <svg class="m-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24" id="Mail--Streamline-Rounded----Material-Symbols" height="24" width="24">
+                    <path d="M3.354166666666667 19.166666666666668c-0.38333333333333336 0 -0.71875 -0.14375 -1.00625 -0.43125 -0.2875 -0.2875 -0.43125 -0.6229166666666667 -0.43125 -1.00625V5.270833333333334c0 -0.38333333333333336 0.14375 -0.71875 0.43125 -1.00625C2.635416666666667 3.9770833333333337 2.9708333333333337 3.8333333333333335 3.354166666666667 3.8333333333333335h16.291666666666668c0.38333333333333336 0 0.71875 0.14375 1.00625 0.43125 0.2875 0.2875 0.43125 0.6229166666666667 0.43125 1.00625v12.458333333333334c0 0.38333333333333336 -0.14375 0.71875 -0.43125 1.00625 -0.2875 0.2875 -0.6229166666666667 0.43125 -1.00625 0.43125H3.354166666666667Zm16.291666666666668 -12.578125 -7.7625 5.079166666666667c-0.06387291666666667 0.031960416666666665 -0.12376875 0.059895833333333336 -0.1796875 0.08385416666666666 -0.05591875 0.023958333333333335 -0.12376875 0.0359375 -0.20364583333333333 0.0359375 -0.07987708333333333 0 -0.14772708333333334 -0.011979166666666667 -0.20364583333333333 -0.0359375 -0.05591875 -0.023958333333333335 -0.11581458333333333 -0.051893749999999995 -0.1796875 -0.08385416666666666L3.354166666666667 6.588541666666667V17.729166666666668h16.291666666666668V6.588541666666667ZM11.5 10.49375 19.55 5.270833333333334H3.4739583333333335L11.5 10.49375ZM3.354166666666667 6.7562500000000005v-0.9420416666666667V5.270833333333334v0.5510416666666667V6.7562500000000005Z" stroke-width="0.5"></path>
+                </svg>
+                <input type="text" name="email" placeholder="example@domain.com" id="Email" required>
+                <span class="sign-in-btn-2"><span class="material-symbols-outlined">add</span> Send Request</span>
+            </div>
+            <div class="footer-info">
+                <span>Waiting For Your Partner To Accept The Request</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Login And Sing In Code -->
+
+    <div class="container hidden-screens" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <span>Use your email for registeration</span>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Verification Code" required>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Log In</h1>
+                <span>Use your email and password</span>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Verification Code" required>
+                <span>Did Not Receive Code? &ensp;<a onclick="show_m_signin()" class="purple-highlighted">Try Again</a></span>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="./svg/logoleft.svg" alt="Twinky-Logo">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="./svg/logoleft.svg" alt="Twinky-Logo">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
